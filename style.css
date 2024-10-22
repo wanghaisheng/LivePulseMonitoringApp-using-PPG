@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center; 
+    padding: 20px;
+}
+
+.steps-container {
+    max-width: 600px; /* Maximum width of the box */
+    margin: 20px auto; /* Center the box */
+    padding: 20px; /* Padding inside the box */
+}
+
+.left-align {
+    text-align: left; /* Align text to the left */
+    font-size: 1.2em; /* Increase font size */
+}
+
+.responsive-list {
+    padding-left: 20px; /* Padding for the list */
+    margin: 0; /* Remove default margin */
+    text-align: left;
+    list-style: 1; /* Remove bullet points */
+}
+
+.responsive-list li {
+    margin-bottom: 10px; /* Space between list items */
+    /*background: #e9ecef; Item background */
+    border-radius: 5px; /* Rounded corners for list items */
+}
+
+
+video {
+    width: 64px;
+    height: 48px;
+    border: 2px solid black ;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    margin: 5px; /* Margin */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007BFF; /* Primary background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Focus effect */
+button:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+}
+
+#startTest {
+    background-color: green;
+}
+#stopTest {
+    background-color: red;
+}
+#status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+.hrValue {
+    display: inline-block; /* Make it an inline block for circular shape */
+    width: 100px; /* Width of the circle */
+    height: 100px; /* Height of the circle */
+    line-height: 100px; /* Center text vertically */
+    border: 5px solid #ff0000; /* Border color and thickness */
+    border-radius: 50%; /* Make it a circle */
+    text-align: center; /* Center text horizontally */
+    font-size: 48px; /* Font size */
+    color: #000; /* Text color */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: background color */
+}

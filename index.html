@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Rate Analyser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Live Pulse Monitoring App</h1>
+        <div class="steps-container">
+            <p class="left-align"><b>Steps:</b></p>
+            <ol type="1" class="responsive-list">
+                <li>Click Start Button</li>
+                <li>Place the finger on the Camera for 35 seconds</li>
+                <li>Live Heart Rate will be displayed below</li>
+            </ol>
+        </div>        
+        <video id="videoElement" autoplay></video>
+        <canvas id="canvasElement" width="480" height="480" style="display:none;"></canvas> <!-- Hidden Canvas -->
+        <p id="status">Click 'Start Test' to begin.</p>
+        <button id="startTest">Start Test</button>
+        <button id="stopTest">Stop Test</button>
+        <p style="font-size: 24px">Heart Rate BPM: </p> <!-- New paragraph for calculated value -->
+        <center><h1><span id="heartRateValue" class="hrValue">0</span></h1></center>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
